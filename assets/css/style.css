@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+
+/* ------------------ HEADER ---------------- */
+.header_home{
+    background-image: url("../img/header.jpg");
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.header_pages{
+    background-color: gainsboro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+}
+
+/* --------NAVBAR -------- */
+
+.header__navbar ul{
+    padding:2rem;
+    list-style-type: none;
+    text-align: right;
+}
+
+.header__navbar li{
+    display: inline-block;
+}
+
+.header__navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    margin:1px;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+
+/* ------------ MAIN ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.box__info {
+    padding: 1.5rem;
+ }
+
+.lista ul{
+    list-style: none;
+}
+
+.separacion {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.separacion__box {
+    margin-left: 2.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.description{
+    font-size:1.5rem;
+}
+
+
+/* ------------ FOOTER ----------- */
+
+.footer{
+    background-color:#E1E1E1;
+    padding:2px;
+    margin:10px;
+    text-align:center;
+}
+
+
+/* ------------ DISCOS.HTML ----------- */
+
+.discos{
+    display:flex;
+    justify-content: center;
+    padding-left: 300px;
+}
+
+
+.grid{
+    display:grid;
+    grid-template-areas:
+    "nav"
+    "disco1 disco2 disco3 disco4";
+    gap: 1cm;
+}
+
+.disco_img{
+    height:350px;
+}
+
+/* ------------ REDES.HTML ----------- */
+
+.redes{
+    align-items: center;
+    padding:30px;
+    height:150px;
+}
+
+@media (min-width: 768px){
+
+}

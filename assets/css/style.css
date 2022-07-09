@@ -129,14 +129,18 @@ main {
 
 .grid{
     display:grid;
-    grid-template-areas:
-    "nav"
-    "disco1 disco2 disco3 disco4";
+    background-color: cornsilk;
+    grid-template-columns: auto auto auto;
     gap: 1cm;
 }
 
 .disco_img{
     height:350px;
+}
+
+.disco{
+    text-align:justify;
+    font-size: 12px;
 }
 
 /* ------------ REDES.HTML ----------- */

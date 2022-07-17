@@ -248,7 +248,7 @@ main {
   
   .boton__limpiar:after {
     content: "";
-    background: #90EE90;
+    background: #ecee90;
     display: block;
     position: absolute;
     padding-top: 300%;

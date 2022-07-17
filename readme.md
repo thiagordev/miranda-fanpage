@@ -1,3 +1,9 @@
-<h1> Esto es un título</h1>
+<h1> Tecnologías usadas</h1>
 
-<p> Esto es una prueba para el curso de CoderHouse </p>
+<ul>
+
+    <li> HTML5 </li>
+    <li> CSS3 </li>
+    <li> Bootstrap </li>
+
+</ul>

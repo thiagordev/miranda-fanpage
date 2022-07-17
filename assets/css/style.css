@@ -29,7 +29,7 @@ body{
 }
 
 .header_pages{
-    background-color: gainsboro;
+    background: linear-gradient(120deg, #A04242, #BF8B00);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,36 +111,42 @@ main {
 /* ------------ FOOTER ----------- */
 
 .footer{
-    background-color:#E1E1E1;
+    width: 250px;
+    background-color:#BF8B00;
+    border-radius: 10cm;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     padding:2px;
-    margin:10px;
-    text-align:center;
 }
 
 
 /* ------------ DISCOS.HTML ----------- */
 
-.discos{
-    display:flex;
-    justify-content: center;
-    padding-left: 300px;
+
+.grid__discos{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1cm;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-
-.grid{
-    display:grid;
-    background-color: cornsilk;
-    grid-template-columns: auto auto auto;
-    gap: 1cm;
+.disco{
+    background-color: #dbd8e2;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .disco_img{
     height:350px;
-}
-
-.disco{
-    text-align:justify;
-    font-size: 12px;
 }
 
 /* ------------ REDES.HTML ----------- */
@@ -150,6 +156,115 @@ main {
     padding:30px;
     height:150px;
 }
+
+
+/* ------------ CONTACTO.HTML ----------- */
+
+.contenedor__form{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    font-size: 12px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 400px;
+    margin-top:1vh;
+    margin-bottom: 1vh;
+    background: linear-gradient(120deg, #A04242, #BF8B00);
+    border-radius: 10px;
+}
+
+.form-control{
+    border-bottom: 2px solid #adadad;
+    margin: 10px 0;
+    width:100%;
+    padding: 0 5px;
+    height:40px;
+    font-size: 16px;
+}
+
+.form__datos{
+    border:1.5px solid black;
+    padding-left: 50%;
+}
+
+.boton__enviar {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .boton__enviar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .boton__enviar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .boton__enviar:hover span {
+    padding-right: 25px;
+  }
+  
+  .boton__enviar:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .boton__limpiar {
+    border-radius: 4px;
+    position: relative;
+    background-color: #f4511e;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .boton__limpiar:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .boton__limpiar:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
 
 @media (min-width: 768px){
 

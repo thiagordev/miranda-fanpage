@@ -107,13 +107,20 @@ main {
     font-size:1.5rem;
 }
 
+.main__redes{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:1cm;
+    margin-bottom:1cm;
+
+}
+
 
 /* ------------ FOOTER ----------- */
 
 .footer{
-    width: 250px;
     background-color:#BF8B00;
-    border-radius: 10cm;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -151,10 +158,8 @@ main {
 
 /* ------------ REDES.HTML ----------- */
 
-.redes{
-    align-items: center;
-    padding:30px;
-    height:150px;
+.card{
+    margin:1cm;
 }
 
 
